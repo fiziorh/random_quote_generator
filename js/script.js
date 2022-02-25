@@ -72,7 +72,7 @@ let quotes = [
 
 // function to generate a randomquote
 function getRandomQuote() {
-  let number = Math.floor(Math.random() * quotes.length) + 1;
+  let number = Math.floor(Math.random() * quotes.length);
   return quotes[number]
 }
 
@@ -118,7 +118,7 @@ function backgrounclr() {
 
 }
 // to make the backgroundclr function generate a new quote if the user clicked
-document.addEventListener("click", backgrounclr, false);
+document.getElementById('load-quote').addEventListener("click", backgrounclr, false);
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
